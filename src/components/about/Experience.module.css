@@ -1,0 +1,282 @@
+.container {
+  max-width: 1410px;
+  position: relative;
+  margin: auto;
+  overflow: visible;
+  margin-bottom: 100px;
+}
+
+.experienceContentBox {
+  position: relative;
+}
+
+@media only screen and (max-width: 1450px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 7px;
+  }
+}
+
+.experience {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center !important;
+  justify-content: space-between;
+}
+
+.experience::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  min-width: 50vw;
+  background-color: #f4f8fc;
+  right: 50%;
+  top: 0;
+  z-index: -1;
+}
+
+.expConHead {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #2e2f46;
+}
+
+.experienceContainer {
+  flex: 0 auto;
+  width: 51%;
+  max-width: 100%;
+  padding-left: 50px;
+}
+
+.mainContainer {
+  padding: 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 0;
+}
+
+.imgBox {
+  padding: 15px;
+  width: fit-content;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 2px;
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+}
+
+.imgBox img {
+  object-fit: contain;
+}
+
+.mainContainer h1 {
+  font-size: 40px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  color: #2e2f46;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.mainContainer p {
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  color: #494a60;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.experienceBannerImage {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-left: -29px;
+  margin-right: 2%;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  max-width: 600px;
+  min-width: 600px;
+}
+.experienceBannerImage img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  position: relative !important;
+}
+
+.experienceContent {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 80px;
+}
+
+.experienceContent img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.experienceContent p {
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  color: #494a60;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1450px) {
+  .experienceBannerImage {
+    max-width: 550px;
+    min-width: 550px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .experienceBannerImage {
+    max-width: 450px;
+    min-width: 450px;
+  }
+  .experience p {
+    font-size: 14px;
+  }
+  .experienceContainer {
+    padding-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .experience {
+    margin-top: 100px;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 1800px;
+  }
+
+  .experienceContainer {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 1%;
+    padding-bottom: 80px;
+    padding-left: 0;
+  }
+
+  .mainContainer {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .mainContainer h1 {
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 1.4;
+  }
+  .experience p {
+    font-size: 16px;
+  }
+
+  .experience::before {
+    left: -20%;
+    right: -50%;
+    width: 120vw;
+  }
+  .experienceBannerImage {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    max-width: 610px;
+    min-width: auto;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .experienceBannerImage img {
+    object-fit: contain;
+    width: 100%;
+  }
+  .shapes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .mainContainer {
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 772px) {
+  .experience {
+    padding: 0 4px 0 5px;
+  }
+  .mainContainer {
+    max-width: 510px;
+    margin: auto;
+  }
+  .mainContainer h1 {
+    font-size: 24px;
+  }
+  .mainContainer p {
+    font-size: 15px;
+  }
+
+  .experienceContent {
+    padding-left: 0;
+    text-align: center;
+  }
+  .experienceContent img {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .experienceContent p {
+    font-size: 16px;
+  }
+}
+
+.btn::before {
+  background-color: #0064fb;
+}
+
+@media only screen and (max-width: 305px) {
+  .experienceBannerImage {
+    margin-top: 170px;
+  }
+}

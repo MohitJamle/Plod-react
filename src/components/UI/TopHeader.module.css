@@ -1,0 +1,116 @@
+.topheader {
+  background-color: #f4f8fc;
+  font-family: "Inter", sans-serif;
+}
+.top_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  margin-bottom: 10px;
+}
+
+.top_links ul {
+  list-style: none;
+}
+.top_links ul li {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 11px 0px;
+}
+.top_links ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_links ul li span a {
+  margin-left: 6px;
+  transition: all 0.3s;
+}
+.top_links ul li span a:hover {
+  color: #0064fb;
+}
+
+.top_social_links ul {
+  list-style: none;
+  padding: 11px 0px;
+}
+.top_social_links ul li a {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.showhide {
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+  .top_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .top_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .top_header {
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    transition: all 200ms;
+    padding: 10px 10px;
+  }
+
+  .showhide {
+    display: block;
+    background-color: #0064fb;
+    color: white;
+  }
+  .showhide h3 {
+    color: white;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1rem;
+    padding: 18px 0;
+  }
+
+  .top_links ul li {
+    display: inline-block;
+    margin-right: 0;
+    margin: 0 10px;
+    /* padding-top: 25px; */
+    /* padding-bottom: 15px; */
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .top_links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top_links ul li {
+    margin-right: 0px;
+    width: fit-content;
+  }
+}
+
+.icon {
+  height: 16px;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: #0064fb;
+  transform: translate(0px, -3px);
+}

@@ -1,0 +1,172 @@
+.cases {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.heading h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.heading p {
+  max-width: 750px;
+  margin: auto;
+  letter-spacing: 0.1px;
+}
+
+/*  */
+/*  */
+
+/*  */
+/*  */
+
+.caseBox {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 25px;
+  max-width: 100%;
+}
+
+.caseBoxContent {
+  flex: 50%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.case {
+  margin-bottom: 30px;
+}
+
+.img {
+  max-width: 100%;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.img a {
+  position: relative;
+  max-width: 100%;
+}
+.img a img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.img a img:hover {
+  transform: scale(1.09);
+}
+
+.caseContent {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.tag1 {
+  display: inline-block;
+  background-color: #eaf0ff;
+  color: #0064fb;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+.tag1:hover {
+  background-color: #0064fb;
+  color: #fff;
+}
+.tag2 {
+  display: inline-block;
+  background-color: #eaf0ff;
+  color: #36cc72;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.6s;
+  margin-left: 15px;
+}
+.tag2:hover {
+  background-color: #36cc72;
+  color: #fff;
+}
+
+.caseContent h3 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  width: fit-content;
+}
+.case:hover .caseContent h3 a {
+  color: #0064fb;
+  transition: all 0.3s ease-in-out;
+}
+
+.case .caseContent h3 a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #0064fb;
+  transition: 0.6s;
+  z-index: -1;
+}
+.case:hover .caseContent h3 a::before {
+  width: 100%;
+}
+
+/*  */
+/*  */
+
+/*  */
+/*  */
+
+.button {
+  background-color: #ff414b;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.button::before {
+  background-color: #0064fb;
+}
+
+@media only screen and (max-width: 992px) {
+  .caseBox {
+    flex-direction: column;
+  }
+  .shapes {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heading h2 {
+    font-size: 25px;
+  }
+  .heading p {
+    font-size: 15px;
+  }
+}

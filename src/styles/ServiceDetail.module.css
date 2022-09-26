@@ -1,0 +1,182 @@
+.ServiceDetail {
+  padding: 0px;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+.ServiceDetailBox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  position: relative;
+  max-width: fit-content;
+  margin: auto;
+}
+
+/* .imgBox { */
+/* min-height: 215px; */
+/* } */
+
+.ServiceDetailBoxItem {
+  position: relative;
+  display: flex;
+  max-width: 460px;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.ServiceDetailBoxItem .imgBox img {
+  object-fit: contain;
+}
+
+.ServiceDetailBoxItem h3 a {
+  text-decoration: none;
+  -webkit-transition: 6s;
+  transition: 6s;
+  color: #2e2f46;
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ServiceDetailBoxItem p {
+  max-width: 450px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  color: #494a60;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.featureButton {
+  background-color: #eaf0ff;
+  color: #0064fb;
+}
+
+.ServiceDetailBoxItem:hover .featureButton {
+  background-color: #0064fb;
+  color: #fff;
+}
+
+.ServiceDetailBoxItem:hover .imgBox img {
+  animation: bounce 1s;
+}
+
+.shape4 {
+  position: absolute;
+  top: -11px;
+  left: 40px;
+}
+
+.shape5 {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+}
+
+.shape41 {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 30%;
+}
+
+.moveFast {
+  animation: rotate 2s infinite;
+  animation: moveFast 10s infinite;
+  position: absolute;
+  top: 12%;
+}
+
+@media only screen and (max-width: 1199px) {
+  .ServiceDetailBoxItem p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ServiceDetailBox {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .ServiceDetailBoxItem {
+    margin-top: 40px;
+  }
+  .shape4,
+  .shape41,
+  .shape5 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ServiceDetailBox {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  30% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  90% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes moveFast {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(90px) translateY(-90px);
+  }
+  40% {
+    transform: translateX(150px) translateY(-90px);
+  }
+  60% {
+    transform: translateX(190px) translateY(-0px);
+  }
+  70% {
+    transform: translateX(180px) translateY(50px);
+  }
+  85% {
+    transform: translateX(90px) translateY(90px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

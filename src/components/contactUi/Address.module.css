@@ -1,0 +1,196 @@
+.address {
+  padding: 0 12px;
+  padding-bottom: 100px;
+}
+.address_content {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.col4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  max-width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-top: var(--bs-gutter-y);
+}
+
+.contactAddress {
+  background: #f4f8fc;
+  border: 1px solid #e6edf6;
+  padding: 45px 35px;
+  border-radius: 5px;
+}
+
+.contactAddress h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #2e2f46;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.contactAddress p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #494a60;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+.socialIcons {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.socialIcons li {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.socialIcons li a {
+  transition: 0.6s;
+  color: #2e2f46;
+  display: inline-block;
+}
+
+.socialIcons li i {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: #ffffff;
+  color: #0064fb;
+  box-shadow: 0px 15px 35px rgb(0 0 0 / 15%);
+  border-radius: 50px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.6s;
+  padding-top: 2.5px;
+}
+
+.socialIcons li i:hover {
+  background-color: #0064fb;
+  color: white;
+  transform: translate(0px, -4px);
+}
+
+.icon {
+  height: 16px;
+}
+
+.AddressIcons {
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.AddressIcons li {
+  list-style-type: none;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #4b4b61;
+  position: relative;
+  padding-left: 40px;
+}
+
+.AddressIcons li:last-child {
+  margin-bottom: 0;
+}
+
+.AddressIcons li i {
+  position: absolute;
+  left: 0;
+  top: 55%;
+  width: 30px;
+  transform: translateY(-50%);
+  color: #0064fb;
+  font-size: 30px;
+  font-family: "remixicon" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.contact_Address {
+  max-width: 30px;
+}
+
+.AddressIcons li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b4b61;
+}
+
+.col8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+  max-width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-top: var(--bs-gutter-y);
+}
+
+#map iframe {
+  width: 100%;
+  height: 440px;
+  border: 1px solid #e6edf6;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 1199px) {
+  #map iframe {
+    height: 510px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .col4 {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .col8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .contactAddress {
+    padding: 35px 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .address {
+    padding-bottom: 100px;
+    margin: auto -8px;
+    padding: 0;
+  }
+
+  .col4 {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: -1px;
+    padding-left: -1px;
+    margin-top: var(--bs-gutter-y);
+  }
+  .col8 {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: -1px;
+    padding-left: -1px;
+    margin-top: var(--bs-gutter-y);
+  }
+}

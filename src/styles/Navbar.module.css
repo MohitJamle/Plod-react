@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+.nav {
+  background-color: #fff;
+  z-index: 99;
+  position: absolute;
+  left: 1px;
+  right: 0;
+  width: 100%;
+  padding: 10px 0;
+  transition: all 550ms ease-in-out;
+}
+.nav:hover {
+  overflow: visible;
+}
+
+.navContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+  margin: 0;
+  background-color: #fff;
+  z-index: 99;
+  height: fit-content;
+  transition: all 550ms ease-in;
+  position: relative;
+  left: 0;
+  right: 0;
+  transition: all 550ms ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.navContent:hover {
+  overflow: visible;
+}
+
+@media only screen and (max-width: 1201px) {
+  .nav {
+    padding: 4px 15px;
+    padding-top: 10px;
+  }
+}
+
+.navFixed {
+  position: fixed;
+  top: 0;
+  transition: all 550ms ease-in-out;
+  box-shadow: 0 0 1.25rem rgb(108 118 134 / 10%);
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.nav .navUl {
+  display: flex;
+  list-style: none;
+  margin-left: 3%;
+  transition: all 250ms ease-in-out;
+}
+
+.nav .navUl li {
+  padding: 20px 14px;
+  padding-top: 23px;
+  padding-bottom: 25px;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+  overflow: visible;
+  height: min-content;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.nav .navUl li:hover {
+  color: #0064fb;
+}
+
+.nav .navUl li:active {
+  color: #0064fb;
+}
+
+.dropDown {
+  /* box-shadow: 1px 5px 20px 1px #dddddd; */
+  display: flex;
+  padding: 10px 0;
+  padding-left: 5px;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  width: 250px;
+  font-size: 12px;
+  top: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  display: none;
+  margin-left: -72px;
+  z-index: -50;
+  transform: translateY(80px);
+  margin-top: 40px;
+  opacity: 0;
+}
+
+.dropDown li {
+  margin-top: -5px;
+  margin-bottom: -15px;
+  padding: 3px 80px;
+  padding-bottom: 0;
+  font-size: 16px;
+  padding-top: 0;
+  margin-left: 0px;
+  color: black;
+  transition: all 250ms ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.nav .navUl li:hover > .dropDown {
+  opacity: 1;
+  transform: translateY(0px);
+  margin-top: 0px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  display: inline;
+}
+
+.dropDown:hover li {
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+}
+
+.nav .navUl li:hover > .dropDown li {
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+}
+
+.dropDown li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #0064fb;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-left: -5px;
+  padding: 0;
+  transition: all 300ms ease-in-out;
+  visibility: none;
+  opacity: 0;
+}
+
+.dropDown li:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropDown li a {
+  font-size: 15px;
+}
+
+.hamburger {
+  position: relative;
+  padding: 22px;
+  cursor: pointer;
+}
+
+.hamItem {
+  background-color: black;
+  width: 4px;
+  height: 2.5px;
+  margin: 4.8px;
+}
+
+.line1 {
+  width: 13px;
+  margin-left: auto;
+  margin-right: 5.5px;
+}
+.line2 {
+  width: 19px;
+  justify-self: center;
+}
+
+.line3 {
+  width: 13px;
+  margin-left: 5.5px;
+  margin-right: auto;
+}
+
+.otherOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2;
+}
+
+.searchImage {
+  margin-right: 25px;
+}
+
+.search {
+  position: relative;
+  margin-right: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: 0.6s;
+  color: #494a60;
+  font-size: 25px;
+  transition: 0.6s;
+  font-family: "remixicon" !important;
+  font-style: normal;
+}
+
+.navButton {
+  background-color: #ff414b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 25px 12px 25px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 15.5px;
+  margin: 0;
+}
+
+.navButton:hover:before {
+  background-color: #0064fb;
+}
+
+.search:before {
+  content: "\f0d1";
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    overflow: visible;
+  }
+  .navFixed {
+    padding: 30px 0;
+    min-height: 74px;
+  }
+  .navContent {
+    padding: 0px 0%;
+    padding-top: -10px;
+    padding-bottom: 0;
+    max-height: 75px;
+    overflow: visible;
+  }
+  .nav .navUl {
+    height: 0;
+    overflow: hidden;
+  }
+  .otherOptions {
+    position: absolute;
+    width: auto;
+    max-width: 245px;
+    overflow: hidden;
+    right: 10px;
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.6s;
+  }
+  .searchImage {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .navButton {
+    padding: 11px 25px 10px 25px;
+  }
+  .imageContainer {
+    width: 100px;
+    min-width: 100px;
+    margin-top: 0px;
+  }
+  .logo {
+    width: 100% !important;
+  }
+  .navFixed {
+    padding: 0 10.5%;
+    padding-top: 10px;
+  }
+  .hamburger {
+    position: relative;
+    padding: 18px 20px 20px 8px;
+    cursor: pointer;
+  }
+}
+
+.hamBurgersBox {
+  display: flex;
+  width: 85px;
+  justify-content: space-between;
+}
+
+.dottedHamburger {
+  display: flex;
+  justify-content: center;
+  padding-top: 18.2px;
+  margin-right: 10px;
+  display: none;
+}
+
+.dottedHamItem {
+  width: 5.5px;
+  height: 5.5px;
+  margin: 1.8px;
+  margin-top: 2.4px;
+  border-radius: 50%;
+  background-color: #2e2f46;
+}
+
+.menuHamburgerLine {
+  display: none;
+  padding: 10px 0;
+}
+
+.menuHamburgerCross {
+  position: relative;
+  padding: 10px 0;
+  width: 35px;
+  display: none;
+  justify-content: center;
+}
+
+.menuHamburgerCross span {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.menuHamItem {
+  width: 35px;
+  height: 4px;
+  background-color: #2e2f46;
+  margin: 4px 0;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dottedHamburger {
+    display: flex;
+  }
+  .menuHamburgerLine {
+    display: block;
+  }
+  .menuHamburgerCross {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .nav {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 0;
+  }
+  .navContent {
+    padding: 0px 1px;
+  }
+  .menuHamburgerLine {
+    min-width: 35px;
+    margin-left: 14px;
+  }
+  .menuHamburgerCross {
+    min-width: 35px;
+    margin-left: 14px;
+  }
+}

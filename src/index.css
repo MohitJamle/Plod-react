@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  height: min-content;
+  overflow-x: hidden;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-y: visible;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
+  color: #494a60;
+  font-weight: 400;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2e2f46;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.shapes {
+  position: relative;
+}
+
+.pbpt {
+  padding: 100px 10px;
+}
+@media only screen and (max-width: 767px) {
+  .pbpt {
+    padding: 100px 0px;
+  }
+}
+
+.Animated {
+  background-color: #0064fb;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+
+.Animated:hover {
+  transform: translateY(-1px);
+  z-index: 1;
+}
+
+.Animated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-110%);
+  background-color: #ff414b;
+  transition: all 350ms ease-in-out;
+  z-index: -1;
+  opacity: 1;
+}
+
+.Animated:hover::before {
+  transform: translateX(0%);
+}
+
+.Animatedbutton {
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #ffffff;
+  background-color: #0064fb;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 5px;
+  padding: 14px 25px 16px 25px;
+  font-weight: 500;
+  font-size: 15.7px;
+  margin-bottom: -5px;
+}
+
+.container {
+  max-width: 1410px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1450px) {
+  .container {
+    max-width: 1320px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 980px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev::after,
+.slick-next::after {
+  padding: 10px;
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-prev::after {
+  content: "🡰";
+}
+.slick-next::after {
+  content: "🡲";
+}
+
+.slick-initialized > .slick-next {
+  right: -5px;
+}
+.slick-prev:hover:after,
+.slick-next:hover:after {
+  color: white;
+  background-color: #0064fb;
+}
+
+.slick-slider:hover.slick-prev::after {
+  color: white;
+  background-color: #0064fb;
+}
+
+.rotateInfi {
+  animation: rotate 4s linear infinite;
+}
+.rotateSlow {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moveAny {
+  animation: moveAny 19s linear infinite;
+}
+
+@keyframes moveAny {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(90px) translateY(-90px);
+  }
+  40% {
+    transform: translateX(150px) translateY(-90px);
+  }
+  60% {
+    transform: translateX(190px) translateY(-0px);
+  }
+  70% {
+    transform: translateX(180px) translateY(40px);
+  }
+  85% {
+    transform: translateX(90px) translateY(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.container2 {
+  max-width: 1410px;
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 12px;
+}
+
+@media (max-width: 1400px) {
+  .container2 {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container2 {
+    max-width: 1140px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container2 {
+    max-width: 720px;
+  }
+  .shapes {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container2 {
+    max-width: 100%;
+  }
+}
+
+.slider_box .slick-prev {
+  display: none;
+}
+.slider_box .slick-next {
+  display: none;
+}
+
+.slider_box .slick-prev::after,
+.slider_box .slick-next::after {
+  display: none;
+}
+
+#clints .slider_box .slick-dots li button:before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  content: "";
+  opacity: 1;
+  background-color: #ffffff;
+  box-shadow: 0px 15px 35px rgb(0 0 0 / 10%);
+  transition: 0.6s;
+}
+
+#ServicePages #clints .slider_box .slick-dots li button:before {
+  background-color: #b7d3fd;
+}
+
+.slider_box .slick-dots li:hover button:before {
+  opacity: 0.65;
+  background-color: #0064fb;
+}
+#ServicePages #clints .slick-dots li.slick-active button:before,
+#clints .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  background-color: #0064fb;
+}
+
+/** About Us = https://templates.envytheme.com/plod/default/about-1.html  */
+/** Service One = https://templates.envytheme.com/plod/default/services-1.html */
+/** Service Detail = https://templates.envytheme.com/plod/default/services-details.html  */

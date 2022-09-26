@@ -1,0 +1,75 @@
+.SmallScreen {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 300px;
+  box-shadow: 0 7px 13px 0 rgb(0 0 0 / 10%);
+  background-color: #fff;
+  overflow: auto;
+  transition: all 0.6s ease-in-out;
+  z-index: 1;
+}
+
+.navSmallUl {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.6s ease-in-out;
+}
+
+.navSmallUl li {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: 1%;
+  transition: all 0.6s ease-in-out;
+}
+
+.navSmallUl li a {
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  padding: 1em 5%;
+  margin: 0;
+  text-align: left;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.navSmallUl li a:hover {
+  color: #0064fb;
+}
+
+.dropDown {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  list-style-type: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.dropDown li {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.dropDown li a {
+  width: 95%;
+  padding: 1em 10%;
+  margin: auto;
+  color: #677294;
+  border-top: 1px solid #dbeefd;
+  opacity: 1;
+  filter: alpha(opacity=75);
+  text-shadow: none !important;
+  visibility: visible;
+  text-transform: none;
+  font-size: 14px;
+  transition: all 0.6s ease-in-out;
+}
